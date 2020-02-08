@@ -1,0 +1,34 @@
+app: interest-rate-calculator
+service: interest-rates
+
+plugins:
+  - serverless-bundle
+
+custom:
+  bundle:
+    caching: true         # Enable Webpack caching
+    stats: true          # Don't print out any Webpack output
+    linting: true
+  
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+  stage: dev
+  region: eu-west-1
+
+functions:
+  interestCalculator:
+    handler: functions/interestCalculator.calculate
+    events:
+      - http:
+          method: get
+          path: interest
+
+#resources:
+#  Resources:
+#    NewResource:
+#      Type: AWS::S3::Bucket
+#      Properties:
+#        BucketName: interest-rates
+

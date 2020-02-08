@@ -1,0 +1,14 @@
+{
+  "name": "interest-rates",
+  "version": "1.0.0",
+  "repository": "https://github.com/Dom101/interest-rates.git",
+  "author": "Dominic Bruton",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "serverless-bundle": "^1.2.5"
+  },
+  "scripts": {
+    "test": "serverless-bundle test"
+  }
+}

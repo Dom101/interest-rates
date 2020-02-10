@@ -5,10 +5,13 @@
   "author": "Dominic Bruton",
   "license": "MIT",
   "private": true,
-  "dependencies": {
-    "serverless-bundle": "^1.2.5"
+  "dependencies": {},
+  "devDependencies": {
+    "serverless-bundle": "^1.2.5",
+    "serverless-offline": "^6.0.0-alpha.65"
   },
   "scripts": {
-    "test": "serverless-bundle test"
+    "test": "serverless-bundle test",
+    "start": "serverless offline"
   }
 }

@@ -2,6 +2,7 @@ app: interest-rate-calculator
 service: interest-rates
 
 plugins:
+  - serverless-offline
   - serverless-bundle
 
 custom:
